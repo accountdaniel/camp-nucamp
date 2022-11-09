@@ -1,3 +1,13 @@
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -10,11 +20,13 @@ h2 {
     color: #3046C5;
 }
 
-header h2 {
-    color: #CEC8FF;
+header {
+    h2 {
+        color: $color-pale;
+    }
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
@@ -31,9 +43,11 @@ footer {
     border-bottom: 1px ridge;
     min-height: 200px;
 }
+
 .navbar {
-    background-color: #901CAD;
+    background-color: $color-mid;
 }
+
 .site-footer {
     background-color: linear-gradient(#cec8ff, white);
     padding: 20px 0;
@@ -45,11 +59,11 @@ footer {
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $color-black-transparent;
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid $color-secondary;
 }
 #carouselButton {
     position: absolute;
